@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link rel="icon" href="../profile.JPG" type="image/jpg">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #1c1c1c, #2c3e50);
+            color: #fff;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .title {
+            font-size: 32px;
+            text-align: center;
+            color: #00e6e6;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 15px 0;
+        }
+
+        .thanks {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        .sign {
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .element {
+            font-weight: bold;
+            color: #00ffd5;
+            font-size: 18px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class="title">ABOUT ME</h2>
+        <p>I am a passionate web developer with a love for creating dynamic and user-friendly websites. My journey in
+            web development began several years ago, and I have since honed my skills in various technologies, including
+            HTML, CSS, and JavaScript.</p>
+
+        <p>I enjoy the challenge of solving complex problems and continuously strive to improve my craft. My goal is to
+            build websites that not only look great but also provide an excellent user experience.</p>
+
+        <p>In addition to my technical skills, I am a strong communicator and enjoy collaborating with others to bring
+            ideas to life. I believe that the best results come from teamwork and open communication.</p>
+
+        <p>Outside of web development, I enjoy exploring new technologies, reading about the latest trends in the
+            industry, and contributing to open-source projects.</p>
+
+        <p>Feel free to connect with me on my social media platforms or reach out via email. I am always open to new
+            opportunities and collaborations!</p>
+
+        <p class="thanks">Thank you for visiting my page! I hope to connect with you soon.</p>
+        <p class="sign">Best regards,<br><strong>KARAN V</strong></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 KARAN V. All rights reserved.</p>
+        <p class="element"></p>
+    </footer>
+
+    <script>
+        var options = {
+            strings: ["See you Again!", "Stay tuned for more updates!", "Keep in touch!"],
+            typeSpeed: 60,
+            backSpeed: 30,
+            loop: true
+        };
+        var typed = new Typed(".element", options);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQL</title>
+    <style>
+        body {
+            background-color: #1b1b2b;
+            color: #f0f0f0;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #00ffff;
+            font-size: 30px;
+        }
+
+        h3 {
+            color: #33ccff;
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #66e0ff;
+        }
+
+        .head {
+            background-color: #2a2a3c;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+
+        code {
+            background-color: #111;
+            padding: 10px;
+            display: block;
+            color: #00ff99;
+            font-family: monospace;
+            border-radius: 5px;
+            white-space: pre-wrap;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .delay-1 {
+            transition-delay: 0.2s;
+        }
+
+        .delay-2 {
+            transition-delay: 0.4s;
+        }
+
+        .delay-3 {
+            transition-delay: 0.6s;
+        }
+
+        .delay-4 {
+            transition-delay: 0.8s;
+        }
+
+        .delay-5 {
+            transition-delay: 1s;
+        }
+
+        .delay-6 {
+            transition-delay: 1.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="fade-in">SQL</h2>
+
+    <div class="head fade-in delay-1">
+        <p>
+            SQL (Structured Query Language) is a standard programming language specifically designed for managing and
+            manipulating relational databases.
+            It allows users to perform various operations such as querying data, updating records, and managing database
+            structures.
+        </p>
+    </div>
+
+    <h3 class="fade-in delay-2">Key Features of SQL:</h3>
+    <ul class="fade-in delay-3">
+        <li>Data Querying: Retrieve data using powerful query statements.</li>
+        <li>Data Manipulation: Insert, update, and delete records with ease.</li>
+        <li>Data Definition: Create, alter, and drop database structures like tables and indexes.</li>
+        <li>Data Control: Manage user access and permissions.</li>
+    </ul>
+
+    <h3 class="fade-in delay-4">Basic SQL Commands:</h3>
+    <div class="head fade-in delay-5">
+        <pre><code>
+SELECT column1, column2 FROM table_name WHERE condition;
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+UPDATE table_name SET column1 = value1 WHERE condition;
+DELETE FROM table_name WHERE condition;
+
+CREATE TABLE table_name (column1 datatype, column2 datatype);
+ALTER TABLE table_name ADD column_name datatype;
+DROP TABLE table_name;
+    </code></pre>
+    </div>
+
+    <footer class="fade-in delay-6">
+        <p>&copy; 2025 KARAN V. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const elements = document.querySelectorAll(".fade-in");
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add("visible");
+                }, 200 * index);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

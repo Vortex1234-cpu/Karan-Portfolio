@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1e1e2f;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        h2,
+        h3 {
+            color: #00ffff;
+        }
+
+        h2.typing::after {
+            content: '|';
+            animation: blink 1s step-start infinite;
+        }
+
+        h2.typing {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            animation: typing 4s steps(30, end) forwards;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        code {
+            display: block;
+            background-color: #2a2a40;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            color: #00ffcc;
+            font-family: monospace;
+        }
+
+        code span.comment {
+            color: #888;
+        }
+
+        code span.keyword {
+            color: #ff9d00;
+        }
+
+        code span.string {
+            color: #ff7eb9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="typing">Data Analytics</h2>
+
+    <p>Data Analytics involves examining datasets to draw conclusions about the information they contain.
+        It is used in various fields to make informed decisions.</p>
+
+    <div class="head">
+        <h3>Key Concepts:</h3>
+        <ul>
+            <li>Data Collection</li>
+            <li>Data Cleaning</li>
+            <li>Data Visualization</li>
+            <li>Statistical Analysis</li>
+        </ul>
+
+        <h3>Tools and Technologies:</h3>
+        <ul>
+            <li>Python (Pandas, NumPy)</li>
+            <li>R</li>
+            <li>SQL</li>
+            <li>Tableau</li>
+            <li>Power BI</li>
+        </ul>
+    </div>
+
+    <h3>Example of Data Analysis in Python:</h3>
+    <code>
+        <span class="comment"># Example of Data Analysis in Python</span><br>
+        <span class="keyword">import</span> pandas <span class="keyword">as</span> pd<br>
+        data = pd.read_csv(<span class="string">'data.csv'</span>)<br>
+        print(data.describe())
+    </code>
+
+    <footer>
+        <p>&copy; 2025 KARAN V. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

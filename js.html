@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1e1e2f;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        h2,
+        h3 {
+            color: #ffd700;
+        }
+
+        .head p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        code {
+            display: block;
+            background-color: #2a2a40;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            color: #00ffcc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+        }
+
+        /* Typing animation for h2 */
+        h2::after {
+            content: '|';
+            animation: blink 1s step-start infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        h2.typing {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0;
+            animation: typing 4s steps(30, end) forwards;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="typing">JAVASCRIPT</h2>
+
+    <div class="head">
+        <p>
+            JavaScript is a versatile programming language primarily used for web development.
+            It allows developers to create interactive and dynamic web pages.
+        </p>
+        <p>
+            JavaScript can be used for both client-side and server-side development,
+            making it a powerful tool in modern web applications.
+        </p>
+    </div>
+
+    <h3>Key Features of JavaScript:</h3>
+    <ul>
+        <li>Dynamic Typing: Variables can hold any type of data, and types are determined at runtime.</li>
+        <li>Event-Driven: JavaScript can respond to user actions like clicks, form submissions, and more.</li>
+        <li>Asynchronous Programming: Supports operations using callbacks, promises, and async/await syntax.</li>
+        <li>Rich Ecosystem: Libraries and frameworks (like React, Angular, Vue.js) enhance capabilities.</li>
+    </ul>
+
+    <h3>Basic Syntax Example:</h3>
+    <code>
+        // Function to greet a user<br>
+        function greetUser(name) {
+            console.log("Hello, " + name + "!");
+        }
+
+        // Calling the function<br>
+        greetUser("Karan");
+    </code>
+
+    <footer>
+        <p>&copy; 2025 KARAN V. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Extra interactivity example
+        window.onload = () => {
+            greetUser("Karan");
+        };
+
+        function greetUser(name) {
+            console.log("Hello, " + name + "!");
+        }
+    </script>
+</body>
+
+</html>
