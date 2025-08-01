@@ -3,38 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KARAN V - Skills</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to bottom, #1c1b29, #5c5b6e);
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #000;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            color: #ff2e63;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #00ffff;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .skills-section h1 {
+            color: #00ffff;
+            margin-bottom: 40px;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-box {
+            padding: 15px 25px;
+            border: 2px solid #00ffff;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .skill-box:hover {
+            background-color: #00ffff;
+            color: #000;
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">KARAN V</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section class="about-section">
-        <h1>About Me</h1>
-        <p>Hello! I'm <strong>Karan V</strong>, a passionate web developer with experience in building stylish,
-            responsive, and interactive websites using HTML, CSS, JavaScript, and modern tools.</p>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">KARAN V</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about1.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
-        <p>I'm always eager to learn new technologies, solve problems creatively, and build user-friendly web
-            experiences. Whether it's a static portfolio or a dynamic application, I enjoy crafting elegant solutions.
-        </p>
+    <!-- Skills Section -->
+    <div class="skills-section">
+        <h1>My Skills</h1>
+        <div class="skills-grid">
+            <div class="skill-box">HTML5</div>
+            <div class="skill-box">CSS3</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">Java</div>
+            <div class="skill-box">C Language</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Data Analytics</div>
+            <div class="skill-box">Data Science</div>
+        </div>
+    </div>
 
-        <p>Outside of coding, I enjoy photography, music, and learning about UI/UX design trends.</p>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 KARAN V. All rights reserved.</p>
+        © 2025 KARAN V. All rights reserved.
     </footer>
+
 </body>
 
 </html>
